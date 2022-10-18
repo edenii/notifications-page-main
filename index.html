@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/75c7bce2f9.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  
+</head>
+<body>
+  <main>
+    <header>
+      <h1 id="new-message">Notifications <span id="unread-num" class="unread-num">3</span></h1>
+      <button id="mark-all-read">Mark all as read</button>
+    </header>
+    <div class="container">
+      <div class="messages-container unread">
+        <img src="./assets/images/avatar-mark-webber.webp" class="user-pic" />
+        <div class="mid-section">
+        <div class="message">
+         <h3 class="name">Mark Webber</h3>
+         <p class="text">reacted to your recent post<span class="bold">My first tournament today!</span><i class="fa-solid fa-circle" id="dot" onClick="displayNone(this)"></i></p>
+        </div>
+        <p class="time">1m ago</p>
+      </div>
+      </div>
+      <div class="messages-container unread">
+        <img src="./assets/images/avatar-angela-gray.webp" class="user-pic" />
+        <div class="mid-section">
+        <div class="message">
+         <h3 class="name">Angela Gray</h3>
+         <p class="text">followed you <i class="fa-solid fa-circle" id="dot" onClick="displayNone(this)"></i></p>
+        </div>
+        <p class="time">5m ago</p>
+        </div>
+      </div>
+      <div class="messages-container unread">
+        <img src="./assets/images/avatar-jacob-thompson.webp" class="user-pic" />
+        <div class="mid-section">
+        <div class="message">
+         <h3 class="name">Jacob Thompson</h3>
+         <p class="text">has joined your group<span class="x-bold">Chess Club</span> <i class="fa-solid fa-circle" id="dot" onClick="displayNone(this)"></i></p>
+        </div>
+        <p class="time">1 day ago</p>
+      </div>
+      </div>
+      <div class="messages-container">
+        <img src="./assets/images/avatar-rizky-hasanuddin.webp" class="user-pic" />
+        <div class="mid-section">
+        <div class="message">
+         <h3 class="name">Rizky Hasanuddin</h3>
+         <p class="text">sent you a private message</p>
+        </div>
+        <p class="time">5 days ago</p>
+        <p class="private">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.</p>
+        </div>
+      </div>
+      <div class="messages-container">
+        <img src="./assets/images/avatar-kimberly-smith.webp" class="user-pic" />
+        <div class="mid-section">
+        <div class="message">
+         <h3 class="name">Kimberly Smith</h3>
+         <p class="text">commented on your picture</p>
+        </div>
+        <p class="time">1 week ago</p>
+        </div>
+        <img src="./assets/images/image-chess.webp" class="chess-img" />
+      </div>
+      <div class="messages-container">
+        <img src="./assets/images/avatar-nathan-peterson.webp" class="user-pic" />
+        <div class="mid-section">
+        <div class="message">
+         <h3 class="name">Nathan Peterson</h3>
+         <p class="text">reacted to your recent post<span class="bold">5 end-game strategies to increase your win rate</span></p>
+        </div>
+        <p class="time">2 weeks ago</p>
+        </div>
+      </div>
+      <div class="messages-container">
+        <img src="./assets/images/avatar-anna-kim.webp" class="user-pic" />
+        <div class="mid-section">
+        <div class="message">
+         <h3 class="name">Anna Kim</h3>
+         <p class="text">left the group<span class="x-bold">Chess Club</span></p>
+        </div>
+        <p class="time">2 weeks ago</p>
+      </div>
+      </div>
+    </div>
+  </main>
+
+
+
+    
+ 
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Chen Liu</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
